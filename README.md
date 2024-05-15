@@ -1,4 +1,4 @@
-# vgm_table
+# VGMTable
 
 1. VGM Table is a versatile tool made in MERN stack that aims to help any GMs in making their roleplaying life easier.
 2. Right now it works like a note managing app, but in the future other more complexed functionalities are planned like:
