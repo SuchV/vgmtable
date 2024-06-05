@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 
 export default function Page() {
     return (
-        <main className="h-full">
-                <Button variant="outline" className="">
+        <main className="h-screen flex-grow overflow-auto">
+            <Button variant="outline" className="">
                     <Link href="/sheets/1">
                         Sheets
                     </Link>
