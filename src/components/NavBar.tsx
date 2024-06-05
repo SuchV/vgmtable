@@ -1,21 +1,33 @@
 import Link from "next/link";
-
+import Image from "next/image";
+import NavBarIcon from "@/src/app/assets/navbarIcon.svg";
 
 export default function NavBar() {
     return (
-        <div className="w-full justify-center flex h-20 bg-orange-300 p-4 text-white ">
-            {/* <h1 className="h-full">VGMTable</h1> */}
-            <p className="flex gap-4 items-center justify-center">
+        <nav className="w-full items-center justify-between flex h-20 bg-green-600 p-4 text-white ">
+            <div className="max-w-40 h-full">
+                <span className="h-full font-semibold text-4xl tracking-tight">
+                    <Link href="/" className="h-full flex gap-1 items-center">
+                        <Image
+                            src={NavBarIcon}
+                            alt="Navbar Logo"
+                            className="h-full"
+                        />
+                        VGMTable
+                    </Link>
+                </span>
+            </div>
+            <div className="flex gap-4">
                 <Link href="/sheets">
-                    sheets
+                    Sheets
+                </Link>
+                <Link href="/adventures">
+                    Adventures
                 </Link>
                 <Link href="/sheets">
                     sheets
                 </Link>
-                <Link href="/sheets">
-                    sheets
-                </Link>
-            </p>
-        </div>
+            </div>
+        </nav>
     );
 }
