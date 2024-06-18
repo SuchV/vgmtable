@@ -1,24 +1,24 @@
-import { Todo } from "../types/todo";
 import TodoItem from "./TodoItem";
+import { db } from "@/lib/db";
+import { TodoTask } from '@prisma/client'
 
 interface TodoListProps {
-    todos: Todo[];
-    onCompletedChange: (id: number, completed: boolean) => void;
-    onDelete: (id: number) => void;
+    todos: TodoTask[];
+    onCompletedChange: (id: string, completed: boolean) => void;
+    // onDelete: (id: string) => void;
 }
 
 export default function TodoList({
     todos,
     onCompletedChange,
-    onDelete,
+    // onDelete,
 }: TodoListProps) {
     const todosSorted = todos.sort((a, b) => {
         if (a.completed === b.completed) {
-            return b.id - a.id;
+            return b.id.localeCompare(a.id);
         }
         return a.completed ? 1 : -1
     })
-
     return (
         <>
             <div className="space-y-2">
@@ -27,7 +27,7 @@ export default function TodoList({
                         todo={todo}
                         key={todo.id}
                         onCompletedChange={onCompletedChange}
-                        onDelete={onDelete}
+                        // onDelete={onDelete}
                     />
                 ))}
             </div>
