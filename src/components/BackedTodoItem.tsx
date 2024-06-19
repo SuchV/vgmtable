@@ -5,9 +5,11 @@ import { TodoTask } from '@prisma/client'
 
 interface TodoItemProps {
     todo: TodoTask;
+    onCompletedChange: (id: string, completed: boolean) => void;
+    // onDelete: (id: number) => void;
 }
 
-export default function TodoItem({todo}: TodoItemProps) {
+export default function TodoItem({todo, onCompletedChange }: TodoItemProps) {
     return(
         <div className="flex items-center gap-1">
             <label className="flex items-center gap-2 border rounded-md p-2 border-gray-400 bg-white hover:bg-slate-50 grow">

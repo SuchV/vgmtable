@@ -20,14 +20,14 @@ export async function POST(req: Request) {
     }
 }
 
-// export async function GET() {
-//     try {
-//         const todos = await db.todoTask.findMany({
-//             where: {},
-//         });
-//         return NextResponse.json(todos);
-//     } catch (error) {
-//         console.log(error);
-//         return new NextResponse("internal error", { status: 500 });
-//     }
-// }
+export async function GET() {
+    try {
+        const todos = await db.todoTask.findMany({
+            where: {},
+        });
+        return NextResponse.json(todos);
+    } catch (error) {
+        console.log(error);
+        return new NextResponse("internal error", { status: 500 });
+    }
+}
