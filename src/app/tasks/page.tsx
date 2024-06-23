@@ -1,4 +1,4 @@
-import TodoList from "@/components/TodoList";
+import TodoList from "@/components/TodoList/TodoList";
 import { db } from "@/lib/db";
 
 export default async function Page() {
