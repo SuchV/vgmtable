@@ -19,10 +19,10 @@ VGMTable is built using a modern stack of technologies:
 * **MySQL Database:** Reliable and efficient relational database for storing campaign data.
 * **Zod Validation:** Ensure data integrity and security with robust validation.
 * **React & React Hook Form:** Efficient form handling for a seamless user experience.
-* **Tailwind CSS:** Rapidly style your application with utility-first CSS classes.
-* **Axios:** Simplified HTTP requests for interacting with your backend API.
-* **Zustand:** Global state management made easy.
-* **Shadcn/UI:** Collection of reusable React components to speed up development.
+* **Tailwind CSS:** Quick and readible styling.
+* **Axios:** Simplified HTTP requests for interacting with  backend API.
+* **Zustand:** Global state management.
+* **Shadcn/UI:** Collection of reusable React components.
 * **Pdf-lib:** Generate PDFs for character sheets, rule summaries, and more.
 * **Postman:** Thorough API testing for a reliable backend.
 
@@ -42,7 +42,7 @@ VGMTable has an exciting roadmap for future features:
 
 ## Get Involved! 🙌
 
-Interested in contributing to VGMTable? Check my Profile!
+Interested in contributing to VGMTable? Get my contacts from my Profile!
 
 ## Let's Roll for Initiative! 🎲
 
